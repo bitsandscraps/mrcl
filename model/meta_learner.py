@@ -228,6 +228,7 @@ class MetaLearingClassification(nn.Module):
 
         # print(y_traj)
         # print(y_rand)
+        self.update_step = len(x_traj)
         meta_losses = [0 for _ in range(self.update_step + 1)]  # losses_q[i] is the loss on step i
         accuracy_meta_set = [0 for _ in range(self.update_step + 1)]
 

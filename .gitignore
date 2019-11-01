@@ -1,3 +1,6 @@
+data
+results
+venv
 *.xml
 .idea
 .DS_Store
